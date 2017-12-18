@@ -1,0 +1,20 @@
+{
+    "name": "slack-realtime",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Steven Klein",
+    "license": "ISC",
+    "dependencies": {
+        "@slack/client": "^3.14.2",
+        "debug": "^3.1.0",
+        "debug-logger": "^0.4.1",
+        "express": "^4.16.2",
+        "google-translate-api": "^2.3.0",
+        "node-linq": "0.0.5",
+        "smartslack": "^1.2.1"
+    }
+}
