@@ -47,7 +47,7 @@ rtm.on(plugins.RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
     if (messageChannelId != destChannelId) {
         plugins.Translate(message.text, { from: 'ja', to: defaultLanguage }).then(function(output) {
             web.users.info(message.user, function (err, info) {
-                rtm.sendMessage('*' + info.user.real_name + '* *' + messageChannelName + '* ' + output.text, destChannelId);
+                rtm.sendMessage('*' + info.user.real_name + '* from *' + messageChannelName + '* ' + output.text, destChannelId);
             });
         });
     }
